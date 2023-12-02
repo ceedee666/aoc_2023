@@ -1,5 +1,5 @@
+import math
 from collections import defaultdict
-from functools import reduce
 from pathlib import Path
 
 import typer
@@ -56,7 +56,7 @@ def min_cubes_for_game(game: tuple[int, list]):
 
 def power_of_game(game: tuple[int, list, dict]):
     id, rounds, min_cubes = game
-    power = reduce(lambda x, y: x * y, [min_cubes[color] for color in min_cubes])
+    power = math.prod([min_cubes[color] for color in min_cubes])
     return id, rounds, min_cubes, power
 
 

@@ -6,7 +6,7 @@ The following libraries are used to implement the solution:
 
 * Typer (https://typer.tiangolo.com/) to generate a nice command line interface
 * pathlib (https://docs.python.org/3/library/pathlib.html)
-* functools (https://docs.python.org/3/library/functools.html)
+* math (https://docs.python.org/3/library/math.html)
 
 === Main idea
 Today was straigtforward. I used a tuple to repsesnet the games. Each round ist a map in the list of rounds.
