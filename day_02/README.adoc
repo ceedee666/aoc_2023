@@ -1,0 +1,21 @@
+== Day 01
+
+This solution is written in python.
+
+The following libraries are used to implement the solution:
+
+* Typer (https://typer.tiangolo.com/) to generate a nice command line interface
+* pathlib (https://docs.python.org/3/library/pathlib.html)
+* functools (https://docs.python.org/3/library/functools.html)
+
+=== Main idea
+Today was straigtforward. I used a tuple to repsesnet the games. Each round ist a map in the list of rounds.
+On this basis I tried to implement simple functions to filter the data. Only the parsing of the 
+input data is not nicely functional. 
+
+=== What did I learn
+
+=== How to run
+
+Run using:
+`$ python day_02.py --help`
