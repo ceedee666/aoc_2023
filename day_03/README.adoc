@@ -1,0 +1,17 @@
+== Day 03
+
+This solution is written in python.
+
+The following libraries are used to implement the solution:
+
+* Typer (https://typer.tiangolo.com/) to generate a nice command line interface
+* pathlib (https://docs.python.org/3/library/pathlib.html)
+
+=== Main idea
+
+=== What did I learn
+
+=== How to run
+
+Run using:
+`$ python day_03.py --help`
