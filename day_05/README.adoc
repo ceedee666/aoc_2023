@@ -1,0 +1,22 @@
+== Day 03
+
+This solution is written in python.
+
+The following libraries are used to implement the solution:
+
+* Typer (https://typer.tiangolo.com/) to generate a nice command line interface
+* pathlib (https://docs.python.org/3/library/pathlib.html)
+* itertools (https://docs.python.org/3/library/itertools.html)
+=== Main idea
+
+For part 1 I used simple ranges in Python. Unfortunately, the brute force approach would not work for part 2.
+With some reading of possible ideas I implemented a recoursive solution for part 2. Finally, a very nice solution. 
+
+=== What did I learn
+
+Learnd about the batched function in itertools.
+
+=== How to run
+
+Run using:
+`$ python day_05.py --help`
