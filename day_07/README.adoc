@@ -1,0 +1,26 @@
+== Day 03
+
+This solution is written in python.
+
+The following libraries are used to implement the solution:
+
+* Typer (https://typer.tiangolo.com/) to generate a nice command line interface
+* pathlib (https://docs.python.org/3/library/pathlib.html)
+* itertools (https://docs.python.org/3/library/itertools.html)
+
+=== Main idea
+
+I first tried to solve today using data classes. Got stuck on the second part. 
+Then I got the idea to just use the counter. Led to a much simpler solution. 
+
+=== What did I learn
+
+Learned a lot about dataclasses and `__eq__`, `__lt__` and `__hash__`. Although it was not needed in the end. 
+
+In addition it got the nice idea to use sorted list representation of the counter values and the usage of 
+`map` together with `str.split` from other users solutions.  
+
+=== How to run
+
+Run using:
+`$ python day_07.py --help
