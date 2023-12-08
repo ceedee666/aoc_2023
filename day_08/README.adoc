@@ -1,0 +1,31 @@
+== Day 03
+
+This solution is written in python.
+
+The following libraries are used to implement the solution:
+
+* Typer (https://typer.tiangolo.com/) to generate a nice command line interface
+* pathlib (https://docs.python.org/3/library/pathlib.html)
+* itertools (https://docs.python.org/3/library/itertools.html)
+* math (https://docs.python.org/3/library/math.html)
+* functools (https://docs.python.org/3/library/functools.html)
+* collections.abc (https://docs.python.org/3/library/collections.abc.html)
+
+=== Main idea
+
+The first part of the puzzle was straightforward. Just build a map of the nodes an 
+follow the path. I used `itertools.cycle` to cycle through the directions.
+
+Second part was a little more difficult. After trying brute force I quickly realized that
+the solution to the problem is the **least common multiple** of the individual path length. 
+Of cause I had to look up the formula for it first. Then the solution was also easy. 
+
+=== What did I learn
+
+* itertools.cycle
+* lcm(a,b) = a*b / gcd(a,b) 
+
+=== How to run
+
+Run using:
+`$ python day_08.py --help
