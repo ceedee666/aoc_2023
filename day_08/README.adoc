@@ -24,6 +24,7 @@ Of cause I had to look up the formula for it first. Then the solution was also e
 
 * itertools.cycle
 * lcm(a,b) = a*b / gcd(a,b) 
+* Reading some of the solutions on reddit I found out that there is a `lcm` function in the math module. 
 
 === How to run
 

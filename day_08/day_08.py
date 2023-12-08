@@ -65,8 +65,7 @@ def solve_part_2(data: list[str]) -> int:
     directions, _map = parse_input(data)
     routes = navigate_ghosts(directions, _map)
     route_lengths = [len(r[1]) - 1 for r in routes]
-    gcd = math.gcd(*route_lengths)
-    return reduce(lambda x, y: x * y // gcd, route_lengths)
+    return math.lcm(*route_lengths)
 
 
 @app.command()
