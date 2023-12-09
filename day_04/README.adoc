@@ -1,4 +1,4 @@
-== Day 03
+== Day 04
 
 This solution is written in python.
 
