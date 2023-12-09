@@ -1,0 +1,23 @@
+== Day 09
+
+This solution is written in python.
+
+The following libraries are used to implement the solution:
+
+* Typer (https://typer.tiangolo.com/) to generate a nice command line interface
+* pathlib (https://docs.python.org/3/library/pathlib.html)
+
+=== Main idea
+
+Nothing special today. Just implemented the instructions of the puzzle. 
+Part 2 was easy with my implementation. Just calculate an additional value. 
+
+=== What did I learn
+
+Was first starting to read about mathematical sequences. Then I decided just to try 
+the naive implementation. Sometimes it is good not to overthink things.
+
+=== How to run
+
+Run using:
+`$ python day_09.py --help
