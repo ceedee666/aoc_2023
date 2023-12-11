@@ -17,17 +17,19 @@ test_string = """...#......
 
 class Testing(TestCase):
     def test_part_1(self):
-        galaxies, empty_rows, empty_cols = day_11.parse_input(test_string.split("\n"))
-        result = day_11.solve(galaxies, empty_rows, empty_cols)
+        galaxies = day_11.parse_input(test_string.split("\n"))
+        result = day_11.solve(galaxies)
         self.assertEqual(result, 374, "The sum of shortest paths shoot should be 374.")
 
     def test_part_2(self):
-        galaxies, empty_rows, empty_cols = day_11.parse_input(test_string.split("\n"))
-        result = day_11.solve(galaxies, empty_rows, empty_cols, 10)
+        galaxies = day_11.parse_input(test_string.split("\n"), 10)
+        result = day_11.solve(galaxies)
         self.assertEqual(
             result, 1030, "The sum of shortest paths shoot should be 1030."
         )
-        result = day_11.solve(galaxies, empty_rows, empty_cols, 100)
+
+        galaxies = day_11.parse_input(test_string.split("\n"), 100)
+        result = day_11.solve(galaxies)
         self.assertEqual(
             result, 8410, "The sum of shortest paths shoot should be 8410."
         )

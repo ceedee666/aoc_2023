@@ -13,6 +13,9 @@ The following libraries are used to implement the solution:
 For part 1 I initially just added empty lines and colums. Also I was already thinking about
 simply calculating the result. For part 2 i just refectored the code to calculate the distance.
 
+After reading through some of the solutions on reddit I refactored my solution. The new
+solution calculates the gap when parsing the coordinates of the galaxies. This simlifies the 
+calculation, as the normal manhatten distance can be used.
 
 === What did I learn
 
