@@ -1,0 +1,25 @@
+== Day 11
+
+This solution is written in python.
+
+The following libraries are used to implement the solution:
+
+* Typer (https://typer.tiangolo.com/) to generate a nice command line interface
+* pathlib (https://docs.python.org/3/library/pathlib.html)
+* combinations from itertools (https://docs.python.org/3/library/itertools.html#itertools.combinations)
+
+=== Main idea
+
+For part 1 I initially just added empty lines and colums. Also I was already thinking about
+simply calculating the result. For part 2 i just refectored the code to calculate the distance.
+
+
+=== What did I learn
+
+Did not read the instructions well enough. If a line repeates 100 times I just need to add 99 new lines. 
+Once I realized this bug part 2 was easy as well. 
+
+=== How to run
+
+Run using:
+`$ python day_11.py --help

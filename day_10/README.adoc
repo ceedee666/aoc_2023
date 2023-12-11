@@ -1,0 +1,25 @@
+== Day 10
+
+This solution is written in python.
+
+The following libraries are used to implement the solution:
+
+* Typer (https://typer.tiangolo.com/) to generate a nice command line interface
+* pathlib (https://docs.python.org/3/library/pathlib.html)
+* deque from collections (https://docs.python.org/3/library/collections.html)  
+
+=== Main idea
+
+For part 1 I manually repaced the S with the correct shape and did a deepth first search. 
+For part 2 I counted the number of times a ray from a shape would cross a pipe. If the number is off it is 
+inside the loop, otherwise it is outside.
+
+=== What did I learn
+
+I learnd that counting the number of times a ray crosses the boundaries of a shaope
+can be used to determine if a point is inside the shape or outside.
+
+=== How to run
+
+Run using:
+`$ python day_10.py --help
