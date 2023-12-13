@@ -1,0 +1,26 @@
+== Day 13
+
+This solution is written in python.
+
+The following libraries are used to implement the solution:
+
+* Typer (https://typer.tiangolo.com/) to generate a nice command line interface
+* pathlib (https://docs.python.org/3/library/pathlib.html)
+* Enum (https://docs.python.org/3/library/enum.html)
+
+=== Main idea
+
+Ideas is straigth forward. Partition patterns, reverse one part, and check if they are equal. 
+The `zip` functions is very useful here. For the second part just check if there is at most 1 different char between the partitions.
+
+Unfortunately, I had a some stupid error in partitioning the patterns that took me forever to figure out.
+My test were correct but the solution was wrong. Only when I reimplemented the 
+function I was able to get rid of the bug.
+
+=== What did I learn
+
+* `zip` is really useful. For example, an easy way to transpose es matrix (`list` of `list` of `int`) is `map(list, zip(*matrix))`
+* Used an enum to differentiate between vertical and horizontal. Could have used an `int` instead but wanted try enums. 
+
+Run using:
+`$ python day_13.py --help
