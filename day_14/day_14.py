@@ -34,19 +34,12 @@ def sort_lines(lines: tuple[str, ...], reverse: bool = False) -> tuple[str, ...]
 
 def tilt(platform: tuple[str, ...], direction: str = "N") -> tuple[str, ...]:
     match direction:
-        case "N":
+        case "N" | "S":
             platform = transpose(platform)
-            platform = sort_lines(platform)
+            platform = sort_lines(platform, direction == "S")
             platform = transpose(platform)
-
-        case "S":
-            platform = transpose(platform)
-            platform = sort_lines(platform, True)
-            platform = transpose(platform)
-        case "E":
-            platform = sort_lines(platform, True)
-        case "W":
-            platform = sort_lines(platform)
+        case "E" | "W":
+            platform = sort_lines(platform, direction == "E")
         case _:
             raise NotImplementedError
 
