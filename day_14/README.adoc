@@ -23,6 +23,6 @@ on my machine™.
 
 * could apply the transpose approach from yesterday. 
 * how to use `count` form the `itertools` together with `for` instead of a `while` loop.
-*
+
 Run using:
-`$ python day_14.py --help
+`$ python day_14.py --help`
