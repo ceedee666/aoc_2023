@@ -1,0 +1,28 @@
+== Day 14
+
+This solution is written in python.
+
+The following libraries are used to implement the solution:
+
+* Typer (https://typer.tiangolo.com/) to generate a nice command line interface
+* pathlib (https://docs.python.org/3/library/pathlib.html)
+* count form itertools (https://docs.python.org/3/library/itertools.html#itertools.count)
+
+=== Main idea
+
+My initial idea worked really nice. And it also was a good start for part 2. 
+The idea is to split the strings and sort them using a key function. Part 1 
+was pretty easy with this approach. For part 2 I mixed up east and west. Then I 
+couldn't get the calculation of the cycle right. Just used brute force and 
+`cache` from `functools`. Took forever for part 2.
+
+After that I refactored the solution to get the cycle right. Now it runs in 0.7s 
+on my machine™.
+
+=== What did I learn
+
+* could apply the transpose approach from yesterday. 
+* how to use `count` form the `itertools` together with `for` instead of a `while` loop.
+*
+Run using:
+`$ python day_14.py --help
