@@ -1,0 +1,22 @@
+== Day 15
+
+This solution is written in python.
+
+The following libraries are used to implement the solution:
+
+* Typer (https://typer.tiangolo.com/) to generate a nice command line interface
+* pathlib (https://docs.python.org/3/library/pathlib.html)
+* defaultdict (https://docs.python.org/3/library/collections.html#collections.defaultdict)
+
+=== Main idea
+
+Nothing special today. Quite straight forward puzzle. 
+
+For the second part I created a `defaultdict` containing two list. One 
+containing the lens labels and one containing the focal length. Second part worked on the first try 😎.
+
+=== What did I learn
+
+
+Run using:
+`$ python day_15.py --help`
