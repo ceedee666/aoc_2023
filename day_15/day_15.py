@@ -16,8 +16,8 @@ def read_input_file(input_file_path: str) -> list[str]:
     return lines[0].split(",")
 
 
-def hash(str: str) -> int:
-    return reduce(lambda ac, c: ((ac + ord(c)) * 17) % 256, str, 0)
+def hash(s: str) -> int:
+    return reduce(lambda ac, c: ((ac + ord(c)) * 17) % 256, s, 0)
 
 
 def parse_step(str) -> tuple:
@@ -63,6 +63,18 @@ def solve_part_1(sequence: list[str]) -> int:
 def solve_part_2(sequence: list[str]) -> int:
     boxes = arrange_lenses(sequence)
     return sum([(box + 1) * focusing_power(boxes[box]) for box in boxes])
+
+
+@app.command()
+def part_1a(f: str = "input.txt"):
+    print(
+        sum(
+            [
+                reduce(lambda ac, c: ((ac + ord(c)) * 17) % 256, s, 0)
+                for s in open(f).readline().strip().split(",")
+            ]
+        )
+    )
 
 
 @app.command()
