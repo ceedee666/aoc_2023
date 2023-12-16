@@ -1,0 +1,24 @@
+== Day 16
+
+This solution is written in python.
+
+The following libraries are used to implement the solution:
+
+* Typer (https://typer.tiangolo.com/) to generate a nice command line interface
+* pathlib (https://docs.python.org/3/library/pathlib.html)
+* defaultdict and deque for the collections library (https://docs.python.org/3/library/collections.html)
+
+=== Main idea
+
+Again nothing special today. Most complex part was to implement the logic how
+beams are influenced by the different tiles. 
+
+For cecking which tiles are energized by the beam I implemented a breadth-fist-search using
+a `deque`. Pretty happy that I got this right on the first try. Years of Advent Of Code start to pay off 🤣.
+
+For the second part just run the algorithm with all possible start configurations. 
+
+=== What did I learn
+
+Run using:
+`$ python day_16.py --help`
