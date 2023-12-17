@@ -1,6 +1,5 @@
 import heapq
 from collections import defaultdict
-from functools import reduce
 from pathlib import Path
 
 import typer
@@ -57,11 +56,7 @@ def solve(heatloss_map: list[list[int]], min_dist=1, max_dist=3) -> int:
                 if 0 <= new_x < max_x and 0 <= new_y < max_y:
                     additional_loss += heatloss_map[new_y][new_x]
                     new_loss = current_loss + additional_loss
-                    if (
-                        dist >= min_dist
-                        and new_loss < loss[(new_x, new_y, new_direction)]
-                    ):
-                        loss[(new_x, new_y, new_direction)] = new_loss
+                    if dist >= min_dist:
                         heapq.heappush(
                             heap,
                             (
@@ -71,6 +66,9 @@ def solve(heatloss_map: list[list[int]], min_dist=1, max_dist=3) -> int:
                                 new_direction,
                             ),
                         )
+
+                        if new_loss < loss[(new_x, new_y)]:
+                            loss[(new_x, new_y)] = new_loss
 
     return -1
 
