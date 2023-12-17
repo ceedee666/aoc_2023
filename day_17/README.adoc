@@ -1,0 +1,23 @@
+== Day 17
+
+This solution is written in python.
+
+The following libraries are used to implement the solution:
+
+* Typer (https://typer.tiangolo.com/) to generate a nice command line interface
+* pathlib (https://docs.python.org/3/library/pathlib.html)
+* defaultdict (https://docs.python.org/3/library/collections.html#collections.defaultdict)
+* heapq (https://docs.python.org/3/library/heapq.html)
+
+=== Main idea
+
+Hard day for me today. I immediatly knew this shuld be solved using Dijkstras algorithm. However, I really hard time implementing it.
+Tried several different approaches until I finally got it!
+
+=== What did I learn
+
+After checking some of the solution on reddit I learned the trick to represent the directions as a special list of tuples.
+The reverse directions are keept two steps apart. Checking for reverse direction is as simple as `+2 %4` with this approach.
+
+Run using:
+`$ python day_17.py --help`
