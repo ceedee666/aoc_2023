@@ -1,0 +1,25 @@
+== Day 18
+
+This solution is written in python.
+
+The following libraries are used to implement the solution:
+
+* Typer (https://typer.tiangolo.com/) to generate a nice command line interface
+* pathlib (https://docs.python.org/3/library/pathlib.html)
+
+=== Main idea
+
+My initial idea failed. So i started reading up on the theory. Ended up implementing 
+Gauss's area formula (https://en.wikipedia.org/wiki/Shoelace_formula) and 
+Pick's (https://en.wikipedia.org/wiki/Pick%27s_theorem) theorem.
+
+=== What did I learn
+
+Learned a few things about geometry today. In particular: 
+
+* Gauss's area formula (https://en.wikipedia.org/wiki/Shoelace_formula) and 
+* Pick's (https://en.wikipedia.org/wiki/Pick%27s_theorem) theorem.
+
+
+Run using:
+`$ python day_18.py --help`
