@@ -1,0 +1,25 @@
+== Day 19
+
+This solution is written in python.
+
+The following libraries are used to implement the solution:
+
+* Typer (https://typer.tiangolo.com/) to generate a nice command line interface
+* pathlib (https://docs.python.org/3/library/pathlib.html)
+
+=== Main idea
+
+Quite messy solution today.
+
+I initially generated a solution using dataclasses for the parts and lambda functions for the rules. This did not work at all for part 2. 
+But I liked the approach and kept it. 
+
+For part 2 i build a recursion based on the intervals. I allwas struggle with this kind of recursions.
+
+=== What did I learn
+
+Learned about closures and lamda fuctions in Python for my first solution. 
+
+
+Run using:
+`$ python day_19.py --help`
