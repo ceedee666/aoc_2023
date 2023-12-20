@@ -1,0 +1,25 @@
+== Day 20
+
+This solution is written in python.
+
+The following libraries are used to implement the solution:
+
+* Typer (https://typer.tiangolo.com/) to generate a nice command line interface
+* pathlib (https://docs.python.org/3/library/pathlib.html)
+* Counter und deque from collections
+
+=== Main idea
+
+For part 1 keep track of the in and outputs for each gate. Also for each pulse keep track 
+of the source and the target. Mess up the data structure a litte which made my code quite messy. For 
+example, I represent a pulse with `(value, target, source)` why not `(value, source, target)`?
+
+For part 2 I count how many cycles are needed until the single inputs to the nand-gate just before
+rx (named lb in my case) turn to 1. The number of button presses is simply the product of these values. 
+
+
+=== What did I learn
+
+
+Run using:
+`$ python day_20.py --help`
