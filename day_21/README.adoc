@@ -1,0 +1,26 @@
+== Day 20
+
+This solution is written in python.
+
+The following libraries are used to implement the solution:
+
+* Typer (https://typer.tiangolo.com/) to generate a nice command line interface
+* pathlib (https://docs.python.org/3/library/pathlib.html)
+* Counter und deque from collections
+
+=== Main idea
+
+For part 1 I implemnted a simple BFS. Maybe I should write a small AoC lib containing this 
+algorithm. 
+
+For part2 I had absolutely no idea. I also did not understand what the diamond shape was,
+that people mentioned on reddit. Finally, I saw this visualization: https://www.reddit.com/r/adventofcode/comments/18njrqf/2023_day_21_a_diamond_in_the_rough/
+After that I used the idea of implementing a formula for a quadratic sequence. I used this as a basis description as a basis: https://www.radfordmathematics.com/algebra/sequences-series/difference-method-sequences/quadratic-sequences.html
+
+Without the hints from reddit I would not have been able to solve this puzzle. Also the solution does not work 
+for examples given. 
+
+=== What did I learn
+
+Run using:
+`$ python day_20.py --help`

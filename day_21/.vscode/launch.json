@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Part 1",
+      "request": "launch",
+      "type": "python",
+      "stopOnEntry": false,
+      "console": "integratedTerminal",
+      "program": "${file}",
+      "cwd": "${fileDirname}",
+      "args": ["part-1", "input.txt"]
+    },
+    {
+      "name": "Part 2",
+      "request": "launch",
+      "type": "python",
+      "stopOnEntry": false,
+      "console": "integratedTerminal",
+      "program": "${file}",
+      "cwd": "${fileDirname}",
+      "args": ["part-2", "input.txt"]
+    }
+  ]
+}
