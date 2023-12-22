@@ -1,4 +1,4 @@
-== Day 20
+== Day 21
 
 This solution is written in python.
 
@@ -13,7 +13,7 @@ The following libraries are used to implement the solution:
 For part 1 I implemnted a simple BFS. Maybe I should write a small AoC lib containing this 
 algorithm. 
 
-For part2 I had absolutely no idea. I also did not understand what the diamond shape was,
+For part 2 I had absolutely no idea. I also did not understand what the diamond shape was,
 that people mentioned on reddit. Finally, I saw this visualization: https://www.reddit.com/r/adventofcode/comments/18njrqf/2023_day_21_a_diamond_in_the_rough/
 After that I used the idea of implementing a formula for a quadratic sequence. I used this as a basis description as a basis: https://www.radfordmathematics.com/algebra/sequences-series/difference-method-sequences/quadratic-sequences.html
 
@@ -23,4 +23,4 @@ for examples given.
 === What did I learn
 
 Run using:
-`$ python day_20.py --help`
+`$ python day_21.py --help`

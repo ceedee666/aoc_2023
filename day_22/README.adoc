@@ -1,4 +1,4 @@
-== Day 20
+== Day 22
 
 This solution is written in python.
 
@@ -14,13 +14,14 @@ The following libraries are used to implement the solution:
 
 Solution for today is quite slow but clean.
 
-The idea for part 1 is to sort all bricks by there z-coordinate. For dropping
-the bricks I created a dict containing the current height at a (x,y) coordinat. 
+The idea for part 1 is to sort all bricks by their z-coordinate. For dropping
+the bricks I created a dict containing the current height at a (x,y) coordinate. 
 I then looped through the sorted bricks and calculated the new z-coordinate 
-by cechking all coordinated of a brick. Initially, I forgot to handle "standing"
+by checking all coordinates of a brick. Initially, I forgot to handle "standing"
 bricks (i.e. different z-coordinate between start and end).
 Finally, I calculated a support dict that stored for each brick a list of 
-supporting bricks.
+supporting bricks. I then counted the bricks that can not be removed to calculate the
+number of brick that can be removed,
 
 Part 2 was rather simple with my data structure form part 1. Just do a BFS for
 each ID and count the number of bricks that woud fall it the ID is removed 
