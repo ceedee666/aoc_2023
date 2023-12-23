@@ -29,4 +29,4 @@ each ID and count the number of bricks that woud fall it the ID is removed
 === What did I learn
 
 Run using:
-`$ python day_21.py --help`
+`$ python day_22.py --help`
