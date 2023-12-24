@@ -1,0 +1,22 @@
+== Day 24
+
+This solution is written in python.
+
+The following libraries are used to implement the solution:
+
+* Typer (https://typer.tiangolo.com/) to generate a nice command line interface
+* pathlib (https://docs.python.org/3/library/pathlib.html)
+* combinations from itertools (https://docs.python.org/3/library/itertools.html#itertools.combinations)
+* numpy (https://numpy.org/)
+
+=== Main idea
+
+Solved the first part using numpy. 
+No idea for the second part. Checking reddit I learned about Z3. Used z3 to solve part 2.
+
+=== What did I learn
+
+Learned about Z3.
+
+Run using:
+`$ python day_24.py --help`
