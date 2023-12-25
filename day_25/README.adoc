@@ -1,0 +1,20 @@
+== Day 25
+
+This solution is written in python.
+
+The following libraries are used to implement the solution:
+
+* Typer (https://typer.tiangolo.com/) to generate a nice command line interface
+* pathlib (https://docs.python.org/3/library/pathlib.html)
+* networkx
+
+=== Main idea
+
+Solved using the networkx library.
+
+=== What did I learn
+
+Learned about networkx library.
+
+Run using:
+`$ python day_25.py --help`
