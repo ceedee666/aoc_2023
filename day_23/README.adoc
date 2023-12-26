@@ -8,11 +8,15 @@ The following libraries are used to implement the solution:
 * pathlib (https://docs.python.org/3/library/pathlib.html)
 * copy from copy (https://docs.python.org/3/library/copy.html)
 * defaultdict and deque from collections (https://docs.python.org/3/library/collections.html#collections.defaultdict)
+* networkx (https://networkx.org/documentation/stable/index.html)
 
 === Main idea
 
 Nothing to special for today. Again breadth fist search for part 1. 
 The reversal of the condition trick me. I needed two tries to get it right. 
+
+For part 2 I reduced the graph to only nodes with more than 2 neighbours. After that I used 
+network x to calcualte the path length for all paths in the reduced graph.
 
 === What did I learn
 

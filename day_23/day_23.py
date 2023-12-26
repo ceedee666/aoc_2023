@@ -2,6 +2,7 @@ from collections import defaultdict, deque
 from copy import copy
 from pathlib import Path
 
+import networkx as nx
 import typer
 
 app = typer.Typer()
@@ -124,24 +125,20 @@ def solve_part_1(
 def solve_part_2(
     start: tuple[int, int], end: tuple[int, int], map: dict[tuple[int, int], str]
 ):
-    graph = create_graph(start, end, map)
-    q = deque([(start, [start])])
-    dists = defaultdict(int)
-    paths = defaultdict(list)
-    while q:
-        current, path = q.popleft()
+    g = create_graph(start, end, map)
+    graph = nx.Graph()
+    for u in g:
+        graph.add_node(u)
+        for v, d in g[u]:
+            graph.add_edge(u, v, weight=d)
 
-        for neighbor, dist in graph[current]:
-            if neighbor not in path:
-                new_dist = dists[current] + dist
-                if new_dist > dists[neighbor]:
-                    dists[neighbor] = new_dist
-                    new_path = copy(path)
-                    new_path.append(neighbor)
-                    paths[neighbor] = new_path
-                    q.append((neighbor, new_path))
-
-    return dists[end]
+    all_path_lenght = []
+    for p in nx.all_simple_paths(graph, start, end):
+        path_lenght = sum(
+            [graph.get_edge_data(p[i], p[i + 1])["weight"] for i in range(len(p) - 1)]
+        )
+        all_path_lenght.append(path_lenght)
+    return max(all_path_lenght)
 
 
 @app.command()
