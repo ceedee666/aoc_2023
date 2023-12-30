@@ -1,6 +1,5 @@
-aoc-2023
+!Advent of Code 2023
 
-WARNING: Spoiler Alert! If you want to solve the aoc problems on your own,
-do not read any further.
+WARNING: Spoiler Alert! If you want to solve the aoc problems on your own, do not read any further.
 
 In this repository, I will collect the code for the solutions of https://adventofcode.com[adventofcode] for the 2023 event.
